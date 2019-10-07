@@ -1,0 +1,26 @@
+25754== Memcheck, a memory error detector
+==25754== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==25754== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==25754== Command: ./shell-app
+==25754== 
+Averaged sensor reading: 10
+==25754== Conditional jump or move depends on uninitialised value(s)
+==25754==    at 0x401DC7: main (main.cpp:9)
+==25754== 
+==25754== 
+==25754== HEAP SUMMARY:
+==25754==     in use at exit: 72,748 bytes in 3 blocks
+==25754==   total heap usage: 4 allocs, 1 frees, 73,772 bytes allocated
+==25754== 
+==25754== LEAK SUMMARY:
+==25754==    definitely lost: 24 bytes in 1 blocks
+==25754==    indirectly lost: 20 bytes in 1 blocks
+==25754==      possibly lost: 0 bytes in 0 blocks
+==25754==    still reachable: 72,704 bytes in 1 blocks
+==25754==         suppressed: 0 bytes in 0 blocks
+==25754== Rerun with --leak-check=full to see details of leaked memory
+==25754== 
+==25754== For counts of detected and suppressed errors, rerun with: -v
+==25754== Use --track-origins=yes to see where uninitialised values come from
+==25754== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
